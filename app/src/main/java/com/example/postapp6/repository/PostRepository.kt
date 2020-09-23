@@ -1,5 +1,9 @@
 package com.example.postapp6.repository
 
+
+Class
+
+
 import com.example.postapp6.api.ApiClient
 import com.example.postapp6.api.ApiInterface
 import com.example.postapp6.models.Post
@@ -14,5 +18,9 @@ class PostsRepository() {
         val apiClient = ApiClient.buildService(ApiInterface::class.java)
         val response = apiClient.getPosts()
         return@withContext response
+    }
+
+    class ApiClient {
+
     }
 }
